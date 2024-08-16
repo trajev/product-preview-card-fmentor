@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(30, 38%, 92%);
+}
+
+
+main{
+    width: 40vw;
+    height: 60vh;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    font-family: "Montserrat";
+}
+
+.right{
+    width: 50%;
+    height: 100%;
+    background: url(./images/image-product-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.left p{
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+.perfume{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.left h1{
+    font-size: 18px;
+    color: hsl(212, 21%, 14%);
+    font-size: 32px;
+    font-family: "Fraunces";
+}
+
+.price-div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.price-div h2{
+    font-size: 32px;
+    font-family: "Fraunces";
+    color: hsl(158, 36%, 37%)
+}
+.price-div p{
+    font-size: 16px;
+    text-decoration: line-through;
+}
+
+.cart-btn{
+    display: flex;
+    gap: 10px; 
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-weight: 600;
+    color: white;
+    padding: 12px 0px;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(158, 36%, 37%);
+    cursor: pointer;
+}
+.cart-btn:hover{
+    background-color: hsl(158, 36%, 20%);
+}
+
+.cart-btn img{
+    width: 20px;
+    
+}
+
+
+@media  screen and (max-width: 450px) {
+    
+    body{
+        padding: 20px;
+    }
+    main{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .left{
+        width: 100%;
+        /* background-image: url("./images/image-product-mobile.jpg"); */
+    }
+    .right{
+        width: 100%;
+    }
+}
